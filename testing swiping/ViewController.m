@@ -24,6 +24,8 @@
 //    DraggableViewBackground *draggableBackground = [[DraggableViewBackground alloc]initWithFrame:self.view.frame];
 //    [self.view addSubview:draggableBackground];
     
+
+    
 }
 - (IBAction)login:(id)sender {
     if([self.password.text isEqualToString:@""] && [self.username.text isEqualToString:@""] ){
@@ -35,5 +37,20 @@
         //company view
     }
 }
+- (IBAction)explore:(id)sender {
+    CGRect frame = self.view.frame;
+    frame.origin.y = -self.view.frame.size.height; //optional: if you want the view to drop down
+    DraggableViewBackground *draggableBackground = [[DraggableViewBackground alloc]initWithFrame:frame];
+    draggableBackground.alpha = 0; //optional: if you want the view to fade in
+    
+    [self.view addSubview:draggableBackground];
+    
+    //optional: animate down and in
+    [UIView animateWithDuration:0.5 animations:^{
+        draggableBackground.center = self.view.center;
+        draggableBackground.alpha = 1;
+    }];
+}
+
 
 @end
