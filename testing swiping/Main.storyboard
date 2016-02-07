@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -83,6 +83,8 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="password" destination="bDQ-4u-ObO" id="FaI-uF-cds"/>
+                        <outlet property="textfield" destination="5e3-74-hhE" id="HIJ-0g-AOT"/>
+                        <outlet property="textfield2" destination="bDQ-4u-ObO" id="jDF-Cz-Y42"/>
                         <outlet property="username" destination="5e3-74-hhE" id="qdD-uk-8iq"/>
                     </connections>
                 </viewController>
@@ -216,7 +218,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKM-1E-8a1">
                                 <rect key="frame" x="245" y="79" width="56" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Xplore"/>
+                                <state key="normal" title="Xplore">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="explore:" destination="qbA-N3-cYU" eventType="touchUpInside" id="hAC-xh-hfU"/>
                                 </connections>

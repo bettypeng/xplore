@@ -22,6 +22,8 @@
 @property IBOutlet UIButton *education;
 @property IBOutlet UIButton *hospital;
 @property IBOutlet UIButton *animals;
+@property IBOutlet UITextField *textfield;
+@property IBOutlet UITextField *textfield2;
 
 
 @end
@@ -38,12 +40,28 @@ bool hospitalbool;
 bool animalsbool;
 
 
+-(void)dismissKeyboard {
+    [_textfield resignFirstResponder];
+    [_textfield2 resignFirstResponder];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 //    DraggableViewBackground *draggableBackground = [[DraggableViewBackground alloc]initWithFrame:self.view.frame];
 //    [self.view addSubview:draggableBackground];
 
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
+                                   initWithTarget:self
+                                   action:@selector(dismissKeyboard)];
+    
+    [self.view addGestureRecognizer:tap];
+    
+//    testing = @"hello";
+
+    
+    
     childrenbool = true;
     equalitybool = true;
     environmentbool = true;
@@ -79,14 +97,14 @@ bool animalsbool;
     
 }
 - (IBAction)login:(id)sender {
-    if([self.password.text isEqualToString:@""] && [self.username.text isEqualToString:@""] ){
+    /*if([self.password.text isEqualToString:@""] && [self.username.text isEqualToString:@""] ){
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login error" message:@"Empty" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil];
         [alert show];
     } else if([self.username.text isEqualToString:@"student"]) {
-        //student view
+        
     } else {
-        //company view
-    }
+        
+    }*/
 }
 
 - (IBAction)explore:(id)sender {
