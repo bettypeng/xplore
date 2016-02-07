@@ -192,7 +192,7 @@ static const float CARD_WIDTH = 290; //%%% width of the draggable card
     [store requestAccessToEntityType:EKEntityTypeEvent completion:^(BOOL granted, NSError *error) {
         if (!granted) { return; }
         EKEvent *event = [EKEvent eventWithEventStore:store];
-        event.title = @"Volunteer Events";
+        event.title = @"Volunteer Event";
         event.startDate = [NSDate date]; //today
         event.endDate = [event.startDate dateByAddingTimeInterval:60*60];  //set 1 hour meeting
         event.calendar = [store defaultCalendarForNewEvents];
