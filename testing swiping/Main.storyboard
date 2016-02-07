@@ -271,10 +271,15 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <items>
                                         <navigationItem title="My Events" id="a4q-Kk-VOS">
-                                            <barButtonItem key="leftBarButtonItem" title="Back" id="rBm-ps-JDb">
-                                                <connections>
-                                                    <segue destination="qbA-N3-cYU" kind="modal" id="tjl-Xs-Ont"/>
-                                                </connections>
+                                            <barButtonItem key="leftBarButtonItem" style="plain" id="ssP-E3-Vky">
+                                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JgP-8A-H17">
+                                                    <rect key="frame" x="16" y="7" width="71" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Back"/>
+                                                    <connections>
+                                                        <segue destination="qbA-N3-cYU" kind="modal" id="Veu-Xc-hyA"/>
+                                                    </connections>
+                                                </button>
                                             </barButtonItem>
                                         </navigationItem>
                                     </items>
@@ -333,7 +338,7 @@
         <image name="xplormain.png" width="321" height="398"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="tjl-Xs-Ont"/>
+        <segue reference="Veu-Xc-hyA"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
 </document>
