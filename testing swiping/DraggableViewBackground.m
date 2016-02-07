@@ -24,7 +24,15 @@ static const float CARD_HEIGHT = 386; //%%% height of the draggable card
 static const float CARD_WIDTH = 290; //%%% width of the draggable card
 
 @synthesize exampleCardLabels; //%%% all the labels I'm using as example data at the moment
+@synthesize title;
+@synthesize pics;
+@synthesize dates;
+@synthesize dateArray;
+@synthesize desc;
+@synthesize description;
 @synthesize allCards;//%%% all the cards
+
+
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -32,7 +40,11 @@ static const float CARD_WIDTH = 290; //%%% width of the draggable card
     if (self) {
         [super layoutSubviews];
         [self setupView];
-        exampleCardLabels = [[NSArray alloc]initWithObjects:@"first",@"second",@"third",@"fourth",@"last", nil]; //%%% placeholder for card-specific information
+        exampleCardLabels = [[NSArray alloc]initWithObjects:@"Robot Block Party volunteer", @"Save The Bay", @"Swell Superheroes Day", @"JA Day - Carl Lauro Elementary", @"Earth Day Cleanup", @"Play Partner Volunteer", @"Ice Watch USA Volunteer", @"Inspiring Minds Computer Mentor", nil]; //%%% placeholder for card-specific information
+        pics = [[NSArray alloc] initWithObjects:@"robot", @"savethebay", @"superheroes", @"jainaday", @"earthday", @"zoo", @"icewatch", @"computer", nil];
+        dateArray = [[NSArray alloc] initWithObjects:@"2/28: 8-11 AM", @"3/1 - 5/1", @"4/5: 5-7PM", @"3/24: 12-2PM", @"4/16: 10-4PM", @"Times flexible", @"Winter 2016", @"11/30/15 03:30 PM - 4/29/16 05:45 PM", nil];
+        desc = [[NSArray alloc] initWithObjects:@"The Robot Block Party features demonstrations and exhibits of robots used or created by universities, community organizations, industry and K-12 schools across Rhode Island. We need volunteers to help exhibitors load in and set up their booths, to help spectators find their way in the venue and answer general questions about the event.", @"Save The Bay is a non-profit organization whose mission is to provide education to the community about protecting and restoring the ecological health of the Narragansett Bay region. Volunteer restoration efforts including salt marsh digging and planting projects. Specific field activities include water table depth monitoring, vegetation monitoring, and fish monitoring.", @"Volunteers needed for Swell Superheroes visit to the Hasbro Children's Hospital. Enthusiasm, a superhero costume, and some experience working with kids is all that is needed!", @"Junior Achievement is the world’s largest organization dedicated to educating students about workforce readiness, entrepreneurship and financial literacy through experiential, hands-on programs. We are seeking volunteers to teach in all grades, Kindergarten through 5th. All five elementary sessions will be taught in one day on March 24, 2016.", @" All volunteers should dress for the weather and wear clothes they don't mind getting dirty. Closed-toed shoes are required. Volunteers must be able to do some light to moderate bending and lifting. All volunteers are encouraged to bring their own reusable water bottle and snacks to the cleanup event.", @"A Play Partner is a volunteer who is primarily responsible for observing and facilitating children’s play experiences as well as providing resources for zoo patrons in the activity play spaces located within the Our Big Backyard exhibit at Roger Williams Park Zoo.", @"IceWatch USA™, a program of Nature Abounds, brings you the opportunity to help scientists study how our climate is changing! All you need to do is to choose a location to observe over the winter, like a nearby lake, bay, or river, and record and report your observations about precipitation, ice and wildlife.", @"Inspiring Minds is looking for STEAM (science, technology, engineering, arts, mathematics) enthusiasts to teach suring our out-of-school time programming. Ideal volunteers will have a background a STEAM field, be a self-starter, motivated, organized, responsible, and enjoy working with youth. College experience and/or degree preferred.", nil];
+
         loadedCards = [[NSMutableArray alloc] init];
         allCards = [[NSMutableArray alloc] init];
         cardsLoadedIndex = 0;
@@ -68,11 +80,34 @@ static const float CARD_WIDTH = 290; //%%% width of the draggable card
 // to get rid of it (eg: if you are building cards from data from the internet)
 -(DraggableView *)createDraggableViewWithDataAtIndex:(NSInteger)index
 {
-    DraggableView *draggableView = [[DraggableView alloc]initWithFrame:CGRectMake((self.frame.size.width - CARD_WIDTH)/2, (self.frame.size.height - CARD_HEIGHT)/2, CARD_WIDTH, CARD_HEIGHT)];
+    DraggableView *draggableView = [[DraggableView alloc]initWithFrame:CGRectMake((self.frame.size.width - CARD_WIDTH)/2, (self.frame.size.height - CARD_HEIGHT)/2 + 20, CARD_WIDTH, CARD_HEIGHT)];
+    
+    
     draggableView.information.text = [exampleCardLabels objectAtIndex:index]; //%%% placeholder for card-specific information
+    //    UIImageView *companyPic = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"teespring"]];
+    UIImageView *companyPic = [[UIImageView alloc]initWithImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource: [pics objectAtIndex:index]  ofType:@"png"]]];
+    companyPic.frame = CGRectMake(65, 70, 150, 150);
+    [draggableView.information addSubview: companyPic];
+    
+    dates = [[UILabel alloc] initWithFrame:CGRectMake(0, 230, self.frame.size.width-30, 40)];
+    [draggableView.information addSubview: dates];
+    dates.text = [dateArray objectAtIndex:index];
+    [dates setTextAlignment:NSTextAlignmentCenter];
+    dates.textColor = [UIColor blackColor];
+    [dates setFont:[UIFont fontWithName:@"Avenir Next" size: 15]];
+    
+    description= [[UITextView alloc]initWithFrame:CGRectMake(10, 270, self.frame.size.width-50, 135)];
+    description.text = [desc objectAtIndex:index];
+    [description setTextAlignment:NSTextAlignmentCenter];
+    description.textColor = [UIColor blackColor];
+    [draggableView.information addSubview: description];
+    [description setFont:[UIFont fontWithName:@"Avenir Next" size: 11]];
+    
+    
     draggableView.delegate = self;
     return draggableView;
 }
+
 
 //%%% loads all the cards and puts the first x in the "loaded cards" array
 -(void)loadCards
