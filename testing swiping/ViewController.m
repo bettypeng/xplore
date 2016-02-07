@@ -97,14 +97,14 @@ bool animalsbool;
     
 }
 - (IBAction)login:(id)sender {
-    if([self.password.text isEqualToString:@""] && [self.username.text isEqualToString:@""] ){
+    /*if([self.password.text isEqualToString:@""] && [self.username.text isEqualToString:@""] ){
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login error" message:@"Empty" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil];
         [alert show];
     } else if([self.username.text isEqualToString:@"student"]) {
-        //student view
+        
     } else {
-        //company view
-    }
+        
+    }*/
 }
 
 - (IBAction)explore:(id)sender {

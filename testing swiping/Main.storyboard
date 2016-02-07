@@ -218,7 +218,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKM-1E-8a1">
                                 <rect key="frame" x="245" y="79" width="56" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Xplore"/>
+                                <state key="normal" title="Xplore">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
                                     <action selector="explore:" destination="qbA-N3-cYU" eventType="touchUpInside" id="hAC-xh-hfU"/>
                                 </connections>
