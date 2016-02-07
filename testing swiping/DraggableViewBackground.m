@@ -27,6 +27,7 @@ static const float CARD_WIDTH = 290; //%%% width of the draggable card
 @synthesize title;
 @synthesize pics;
 @synthesize dates;
+@synthesize end;
 @synthesize dateArray;
 @synthesize desc;
 @synthesize description;
@@ -80,6 +81,18 @@ static const float CARD_WIDTH = 290; //%%% width of the draggable card
 // to get rid of it (eg: if you are building cards from data from the internet)
 -(DraggableView *)createDraggableViewWithDataAtIndex:(NSInteger)index
 {
+    UIImageView *logo = [[UIImageView alloc]initWithImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource: @"xplorgray" ofType:@"png"]]];
+    logo.frame = CGRectMake(20, 130, 260, 200);
+    [self addSubview: logo];
+    
+    end = [[UITextView alloc] initWithFrame:CGRectMake(self.frame.size.width/4, 200, self.frame.size.width/2, 80)];
+    [self addSubview: end];
+    end.text = @"Come back soon to xplor new opportunities!";
+    [end setTextAlignment:NSTextAlignmentCenter];
+    end.textColor = [UIColor blackColor];
+    [end setFont:[UIFont fontWithName:@"Avenir Next" size: 15]];
+    end.backgroundColor = [UIColor clearColor]; //the gray background colors
+    
     DraggableView *draggableView = [[DraggableView alloc]initWithFrame:CGRectMake((self.frame.size.width - CARD_WIDTH)/2, (self.frame.size.height - CARD_HEIGHT)/2 + 20, CARD_WIDTH, CARD_HEIGHT)];
     
     

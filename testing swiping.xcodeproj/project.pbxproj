@@ -35,6 +35,7 @@
 		B4C4266B1C671DB5002459B3 /* jainaday.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C426631C671DB5002459B3 /* jainaday.png */; };
 		B4C4266C1C671DB5002459B3 /* icewatch.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C426641C671DB5002459B3 /* icewatch.png */; };
 		B4C4266D1C671DB5002459B3 /* superheroes.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C426651C671DB5002459B3 /* superheroes.png */; };
+		B4C426741C6727B7002459B3 /* xplorgray.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C426731C6727B7002459B3 /* xplorgray.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		B4C426631C671DB5002459B3 /* jainaday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = jainaday.png; path = ../../jainaday.png; sourceTree = "<group>"; };
 		B4C426641C671DB5002459B3 /* icewatch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icewatch.png; path = ../../icewatch.png; sourceTree = "<group>"; };
 		B4C426651C671DB5002459B3 /* superheroes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = superheroes.png; path = ../../superheroes.png; sourceTree = "<group>"; };
+		B4C426731C6727B7002459B3 /* xplorgray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = xplorgray.png; path = ../../xplorgray.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 				B4C426631C671DB5002459B3 /* jainaday.png */,
 				B4C426641C671DB5002459B3 /* icewatch.png */,
 				B4C426651C671DB5002459B3 /* superheroes.png */,
+				B4C426731C6727B7002459B3 /* xplorgray.png */,
 				AD400A781C66AE3300E5E642 /* Main.storyboard */,
 				99B7AEA7192D50D500C1B49C /* AppDelegate.h */,
 				99B7AEA8192D50D500C1B49C /* AppDelegate.m */,
@@ -285,6 +288,7 @@
 				B4C426671C671DB5002459B3 /* robot.png in Resources */,
 				B4C426661C671DB5002459B3 /* earthday.png in Resources */,
 				B4C4266C1C671DB5002459B3 /* icewatch.png in Resources */,
+				B4C426741C6727B7002459B3 /* xplorgray.png in Resources */,
 				B4C4266B1C671DB5002459B3 /* jainaday.png in Resources */,
 				B4C426691C671DB5002459B3 /* zoo.png in Resources */,
 				B4C426681C671DB5002459B3 /* savethebay.png in Resources */,

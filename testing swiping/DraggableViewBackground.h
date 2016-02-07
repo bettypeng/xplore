@@ -44,7 +44,7 @@
 @property (retain,nonatomic)UILabel* title; //%%% the labels the cards
 @property (retain,nonatomic)UILabel* dates; //%%% the labels the cards
 @property (retain,nonatomic)NSArray* dateArray; //%%% the labels the cards
-
+@property (retain,nonatomic)UITextView* end; //%%% the labels the cards
 @property (retain,nonatomic)NSArray* pics; //%%% the labels the cards
 @property (retain,nonatomic)NSArray* desc; //%%% the labels the cards
 @property (nonatomic,strong)UITextView* description; //%%% a placeholder for any card-specific information
