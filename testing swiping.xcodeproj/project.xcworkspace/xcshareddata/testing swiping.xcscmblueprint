@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5FA3FC38AA2426C6B4D765831317071D38AFC7E0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5FA3FC38AA2426C6B4D765831317071D38AFC7E0" : 0,
+    "0DCADD90F9B9FBB9784198085980992D57C81D2E" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "FA486F28-20CE-4F09-8DC8-E2237D17CEA7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5FA3FC38AA2426C6B4D765831317071D38AFC7E0" : "TinderSimpleSwipeCards",
+    "0DCADD90F9B9FBB9784198085980992D57C81D2E" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "testing swiping",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "testing swiping.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/joyhsuu\/hackatbrown.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0DCADD90F9B9FBB9784198085980992D57C81D2E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/cwrichardkim93\/TinderSimpleSwipeCards.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5FA3FC38AA2426C6B4D765831317071D38AFC7E0"
+    }
+  ]
+}
