@@ -61,11 +61,11 @@ static const float CARD_WIDTH = 290; //%%% width of the draggable card
 {
 
     self.backgroundColor = [UIColor colorWithRed:.92 green:.93 blue:.95 alpha:1]; //the gray background colors
-//    menuButton = [[UIButton alloc]initWithFrame:CGRectMake(17, 34, 22, 15)];
-    menuButton = [[UIButton alloc]initWithFrame:CGRectMake(17, 30, 45, 30)];
-//    [menuButton setImage:[UIImage imageNamed:@"back.png"] forState:UIControlStateNormal];
-    messageButton = [[UIButton alloc]initWithFrame:CGRectMake(284, 34, 18, 18)];
-//    [messageButton setImage:[UIImage imageNamed:@"messageButton"] forState:UIControlStateNormal];
+    //menuButton = [[UIButton alloc]initWithFrame:CGRectMake(17, 34, 22, 15)];
+    //[menuButton setImage:[UIImage imageNamed:@"menuButton"] forState:UIControlStateNormal];
+    //messageButton = [[UIButton alloc]initWithFrame:CGRectMake(284, 34, 18, 18)];
+    //[messageButton setImage:[UIImage imageNamed:@"messageButton"] forState:UIControlStateNormal];
+
     xButton = [[UIButton alloc]initWithFrame:CGRectMake(60, 485, 59, 59)];
     [xButton setImage:[UIImage imageNamed:@"xButton"] forState:UIControlStateNormal];
     [xButton addTarget:self action:@selector(swipeLeft) forControlEvents:UIControlEventTouchUpInside];
