@@ -37,12 +37,12 @@ bool educationbool;
 bool hospitalbool;
 bool animalsbool;
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 //    DraggableViewBackground *draggableBackground = [[DraggableViewBackground alloc]initWithFrame:self.view.frame];
 //    [self.view addSubview:draggableBackground];
-    
 
     childrenbool = true;
     equalitybool = true;
