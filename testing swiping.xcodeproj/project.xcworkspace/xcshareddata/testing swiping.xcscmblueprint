@@ -1,16 +1,18 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5FA3FC38AA2426C6B4D765831317071D38AFC7E0",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "AE2173018B3EB4E9908B8D1130EB911AD3A9C88E",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "5FA3FC38AA2426C6B4D765831317071D38AFC7E0" : 0,
-    "0DCADD90F9B9FBB9784198085980992D57C81D2E" : 0
+    "0DCADD90F9B9FBB9784198085980992D57C81D2E" : 0,
+    "AE2173018B3EB4E9908B8D1130EB911AD3A9C88E" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "FA486F28-20CE-4F09-8DC8-E2237D17CEA7",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "5FA3FC38AA2426C6B4D765831317071D38AFC7E0" : "TinderSimpleSwipeCards",
-    "0DCADD90F9B9FBB9784198085980992D57C81D2E" : ""
+    "0DCADD90F9B9FBB9784198085980992D57C81D2E" : "",
+    "AE2173018B3EB4E9908B8D1130EB911AD3A9C88E" : "xplore\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "testing swiping",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -25,6 +27,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/cwrichardkim93\/TinderSimpleSwipeCards.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5FA3FC38AA2426C6B4D765831317071D38AFC7E0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/bettypeng\/xplore.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AE2173018B3EB4E9908B8D1130EB911AD3A9C88E"
     }
   ]
 }
