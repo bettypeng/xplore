@@ -96,7 +96,7 @@ static const float CARD_WIDTH = 290; //%%% width of the draggable card
     [end setFont:[UIFont fontWithName:@"Avenir Next" size: 15]];
     end.backgroundColor = [UIColor clearColor]; //the gray background colors
     
-    DraggableView *draggableView = [[DraggableView alloc]initWithFrame:CGRectMake((self.frame.size.width - CARD_WIDTH)/2, (self.frame.size.height - CARD_HEIGHT)/2 + 20, CARD_WIDTH, CARD_HEIGHT)];
+    DraggableView *draggableView = [[DraggableView alloc]initWithFrame:CGRectMake((self.frame.size.width - CARD_WIDTH)/2, (self.frame.size.height - CARD_HEIGHT)/2, CARD_WIDTH, CARD_HEIGHT)];
     
     
     draggableView.information.text = [exampleCardLabels objectAtIndex:index]; //%%% placeholder for card-specific information
@@ -192,7 +192,7 @@ static const float CARD_WIDTH = 290; //%%% width of the draggable card
     [store requestAccessToEntityType:EKEntityTypeEvent completion:^(BOOL granted, NSError *error) {
         if (!granted) { return; }
         EKEvent *event = [EKEvent eventWithEventStore:store];
-        event.title = @"Volunteer Events";
+        event.title = @"Volunteer Event";
         event.startDate = [NSDate date]; //today
         event.endDate = [event.startDate dateByAddingTimeInterval:60*60];  //set 1 hour meeting
         event.calendar = [store defaultCalendarForNewEvents];
