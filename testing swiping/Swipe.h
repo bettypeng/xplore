@@ -6,8 +6,9 @@
 //  Copyright © 2016 Richard Kim. All rights reserved.
 //
 
-#ifndef Swipe_h
-#define Swipe_h
+#import <UIKit/UIKit.h>
+#import <linkedin-sdk/LISDK.h>
 
+@interface Swipe : UIViewController
+@end
 
-#endif /* Swipe_h */

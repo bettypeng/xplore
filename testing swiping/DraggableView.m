@@ -29,6 +29,8 @@
 @synthesize information;
 @synthesize overlayView;
 
+int numSwipes = 0;
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -160,6 +162,7 @@
 //%%% called when a swipe exceeds the ACTION_MARGIN to the right
 -(void)rightAction
 {
+    numSwipes++;
     CGPoint finishPoint = CGPointMake(500, 2*yFromCenter +self.originalPoint.y);
     [UIView animateWithDuration:0.3
                      animations:^{
@@ -169,6 +172,26 @@
                      }];
     
     [delegate cardSwipedRight:self];
+    NSString *orgName = information.text;
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    switch(numSwipes) {
+        case 1:
+            [defaults setObject:orgName forKey:@"orgName1"];
+        case 2:
+            [defaults setObject:orgName forKey:@"orgName2"];
+        case 3:
+            [defaults setObject:orgName forKey:@"orgName3"];
+        case 4:
+            [defaults setObject:orgName forKey:@"orgName4"];
+        case 5:
+            [defaults setObject:orgName forKey:@"orgName5"];
+        case 6:
+            [defaults setObject:orgName forKey:@"orgName6"];
+        case 7:
+            [defaults setObject:orgName forKey:@"orgName7"];
+    }
+    [defaults synchronize];
     
     NSLog(@"YES");
 }
