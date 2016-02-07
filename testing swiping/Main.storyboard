@@ -240,6 +240,8 @@
                         <outlet property="environment" destination="uXW-Kv-t1Q" id="8DD-Jr-CUz"/>
                         <outlet property="equality" destination="DT4-BG-E8Q" id="i6r-97-tgZ"/>
                         <outlet property="hospital" destination="Z5H-wc-PuE" id="P8l-Uy-9yH"/>
+                        <outlet property="textfield3" destination="7VY-IV-fIQ" id="tlZ-na-Jij"/>
+                        <outlet property="textfield4" destination="Oym-o2-Qhg" id="8u7-Ek-hQs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eJa-9V-P3A" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -24,6 +24,8 @@
 @property IBOutlet UIButton *animals;
 @property IBOutlet UITextField *textfield;
 @property IBOutlet UITextField *textfield2;
+@property IBOutlet UITextField *textfield3;
+@property IBOutlet UITextField *textfield4;
 
 
 @end
@@ -43,6 +45,8 @@ bool animalsbool;
 -(void)dismissKeyboard {
     [_textfield resignFirstResponder];
     [_textfield2 resignFirstResponder];
+    [_textfield3 resignFirstResponder];
+    [_textfield4 resignFirstResponder];
 }
 
 - (void)viewDidLoad
