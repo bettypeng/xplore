@@ -108,9 +108,9 @@ bool animalsbool;
 }
 
 - (IBAction)explore:(id)sender {
-    CGRect frame = CGRectMake(0, 110, self.view.frame.size.width, self.view.frame.size.height-110);
+    CGRect frame = CGRectMake(0, 115, self.view.frame.size.width, self.view.frame.size.height-50);
 
-    frame.origin.y = -self.view.frame.size.height; //optional: if you want the view to drop down
+    frame.origin.y = -self.view.frame.size.height-100; //optional: if you want the view to drop down
     DraggableViewBackground *draggableBackground = [[DraggableViewBackground alloc]initWithFrame:frame];
     draggableBackground.alpha = 0; //optional: if you want the view to fade in
     
@@ -118,7 +118,8 @@ bool animalsbool;
     
     //optional: animate down and in
     [UIView animateWithDuration:0.5 animations:^{
-        draggableBackground.center = self.view.center;
+        CGPoint xy = CGPointMake(self.view.center.x, self.view.center.y + 35);
+        draggableBackground.center = xy;
         draggableBackground.alpha = 1;
     }];
 }
