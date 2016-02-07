@@ -7,6 +7,7 @@
 //
 
 #import "DraggableViewBackground.h"
+#import "ViewController.h"
 
 @implementation DraggableViewBackground{
     NSInteger cardsLoadedIndex; //%%% the index of the card you have loaded into the loadedCards array last
@@ -184,6 +185,7 @@ static const float CARD_WIDTH = 290; //%%% width of the draggable card
         dragView.overlayView.alpha = 1;
     }];
     [dragView rightClickAction];
+
 }
 
 //%%% when you hit the left button, this is called and substitutes the swipe

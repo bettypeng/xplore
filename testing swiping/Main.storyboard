@@ -83,6 +83,8 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="password" destination="bDQ-4u-ObO" id="FaI-uF-cds"/>
+                        <outlet property="textfield" destination="5e3-74-hhE" id="HIJ-0g-AOT"/>
+                        <outlet property="textfield2" destination="bDQ-4u-ObO" id="jDF-Cz-Y42"/>
                         <outlet property="username" destination="5e3-74-hhE" id="qdD-uk-8iq"/>
                     </connections>
                 </viewController>
