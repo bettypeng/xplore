@@ -8,6 +8,7 @@
 
 #import "DraggableViewBackground.h"
 #import "ViewController.h"
+#import <EventKit/EventKit.h>
 
 @implementation DraggableViewBackground{
     NSInteger cardsLoadedIndex; //%%% the index of the card you have loaded into the loadedCards array last
@@ -187,6 +188,20 @@ static const float CARD_WIDTH = 290; //%%% width of the draggable card
         cardsLoadedIndex++;//%%% loaded a card, so have to increment count
         [self insertSubview:[loadedCards objectAtIndex:(MAX_BUFFER_SIZE-1)] belowSubview:[loadedCards objectAtIndex:(MAX_BUFFER_SIZE-2)]];
     }
+    EKEventStore *store = [EKEventStore new];
+    [store requestAccessToEntityType:EKEntityTypeEvent completion:^(BOOL granted, NSError *error) {
+        if (!granted) { return; }
+        EKEvent *event = [EKEvent eventWithEventStore:store];
+        event.title = @"Volunteer Events";
+        event.startDate = [NSDate date]; //today
+        event.endDate = [event.startDate dateByAddingTimeInterval:60*60];  //set 1 hour meeting
+        event.calendar = [store defaultCalendarForNewEvents];
+        NSError *err = nil;
+        [store saveEvent:event span:EKSpanThisEvent commit:YES error:&err];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Volunteer Event" message:@"Added to Calendar" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil];
+        [alert show];
+//        self.savedEventId = event.eventIdentifier;  //save the event id if you want to access this later
+    }];
 
 }
 
