@@ -166,12 +166,7 @@
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="idv-4X-MNa">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <items>
-                                    <navigationItem id="0m4-Tl-dY5">
-                                        <barButtonItem key="leftBarButtonItem" title="Hours" id="dwq-9W-z6c">
-                                            <connections>
-                                                <segue destination="tdb-W0-zQF" kind="modal" id="RWf-1u-6qb"/>
-                                            </connections>
-                                        </barButtonItem>
+                                    <navigationItem title="Filters" id="0m4-Tl-dY5">
                                         <barButtonItem key="rightBarButtonItem" title="Events" id="Z8Y-79-8YG">
                                             <connections>
                                                 <segue destination="LvU-YR-F4s" kind="modal" id="GER-RB-AfK"/>
@@ -250,40 +245,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eJa-9V-P3A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="853" y="178"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="h8G-uA-sjt">
-            <objects>
-                <viewController id="tdb-W0-zQF" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="X3J-aO-4RR"/>
-                        <viewControllerLayoutGuide type="bottom" id="5Da-Fr-Tmc"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="h0o-3g-AzC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cIv-E5-7Qc">
-                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
-                                <items>
-                                    <navigationItem title="Hours" id="abB-qA-lWX">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="PO3-Ly-Ro9">
-                                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                            <connections>
-                                                <segue destination="qbA-N3-cYU" kind="modal" id="EbU-ih-sYL"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="T0m-wh-Li9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="640" y="-397"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="pPT-T8-xWT">
