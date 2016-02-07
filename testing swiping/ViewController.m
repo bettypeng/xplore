@@ -108,7 +108,8 @@ bool animalsbool;
 }
 
 - (IBAction)explore:(id)sender {
-    CGRect frame = self.view.frame;
+//    CGRect frame = self.view.frame
+    CGRect frame = CGRectMake(0, 90, self.view.frame.size.width, self.view.frame.size.height-90);
     frame.origin.y = -self.view.frame.size.height; //optional: if you want the view to drop down
     DraggableViewBackground *draggableBackground = [[DraggableViewBackground alloc]initWithFrame:frame];
     draggableBackground.alpha = 0; //optional: if you want the view to fade in
