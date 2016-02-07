@@ -105,66 +105,66 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Interests:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AuJ-Bb-Gao">
-                                <rect key="frame" x="11" y="309" width="68" height="21"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
+                                <rect key="frame" x="11" y="242" width="68" height="21"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWJ-bv-Qsw">
-                                <rect key="frame" x="14" y="341" width="59" height="59"/>
+                                <rect key="frame" x="15" y="277" width="59" height="59"/>
                                 <connections>
                                     <action selector="childrenBtnPressed:" destination="qbA-N3-cYU" eventType="touchUpInside" id="rDt-HG-fZG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DT4-BG-E8Q">
-                                <rect key="frame" x="92" y="341" width="58" height="59"/>
+                                <rect key="frame" x="93" y="277" width="58" height="59"/>
                                 <connections>
                                     <action selector="equalityBtnPressed:" destination="qbA-N3-cYU" eventType="touchUpInside" id="NDo-im-V10"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KcR-jP-ozl">
-                                <rect key="frame" x="245" y="408" width="59" height="58"/>
+                                <rect key="frame" x="245" y="344" width="59" height="58"/>
                                 <connections>
                                     <action selector="animalsBtnPressed:" destination="qbA-N3-cYU" eventType="touchUpInside" id="t5U-6R-tlc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXW-Kv-t1Q">
-                                <rect key="frame" x="170" y="340" width="59" height="59"/>
+                                <rect key="frame" x="171" y="276" width="59" height="59"/>
                                 <connections>
                                     <action selector="environmentBtnPressed:" destination="qbA-N3-cYU" eventType="touchUpInside" id="0fA-Sd-9G6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TdF-ST-T88">
-                                <rect key="frame" x="14" y="408" width="59" height="59"/>
+                                <rect key="frame" x="15" y="344" width="59" height="59"/>
                                 <connections>
                                     <action selector="eldersBtnPressed:" destination="qbA-N3-cYU" eventType="touchUpInside" id="fR3-dr-Uic"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09e-ny-78T">
-                                <rect key="frame" x="244" y="340" width="59" height="60"/>
+                                <rect key="frame" x="245" y="276" width="59" height="60"/>
                                 <connections>
                                     <action selector="artsBtnPressed:" destination="qbA-N3-cYU" eventType="touchUpInside" id="Lgy-Hk-hY9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5H-wc-PuE">
-                                <rect key="frame" x="170" y="408" width="59" height="59"/>
+                                <rect key="frame" x="171" y="344" width="59" height="59"/>
                                 <connections>
                                     <action selector="hospitalBtnPressed:" destination="qbA-N3-cYU" eventType="touchUpInside" id="WNe-2Q-PrV"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CBv-Gi-G6R">
-                                <rect key="frame" x="11" y="83" width="49" height="21"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
+                                <rect key="frame" x="11" y="93" width="49" height="21"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7VY-IV-fIQ">
-                                <rect key="frame" x="65" y="78" width="169" height="30"/>
+                                <rect key="frame" x="65" y="88" width="115" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="idv-4X-MNa">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <items>
                                     <navigationItem id="0m4-Tl-dY5">
                                         <barButtonItem key="leftBarButtonItem" title="Hours" id="dwq-9W-z6c">
@@ -180,55 +180,54 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Age:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p6U-IR-Azg">
-                                <rect key="frame" x="11" y="139" width="35" height="21"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="XXU-b2-8rJ">
-                                <rect key="frame" x="14" y="254" width="292" height="31"/>
+                                <rect key="frame" x="14" y="194" width="292" height="31"/>
                             </slider>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ySz-hH-DfS">
-                                <rect key="frame" x="65" y="134" width="30" height="30"/>
-                                <state key="normal" title="&lt;18"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XWg-K6-bUV">
-                                <rect key="frame" x="116" y="134" width="30" height="30"/>
-                                <state key="normal" title="18+"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Distance:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DdG-cy-SVV">
-                                <rect key="frame" x="11" y="190" width="68" height="21"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
+                                <rect key="frame" x="11" y="140" width="68" height="21"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIW-dI-Wsx">
-                                <rect key="frame" x="267" y="216" width="46" height="30"/>
+                                <rect key="frame" x="267" y="162" width="46" height="30"/>
                                 <state key="normal" title="100 mi"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvv-Jd-FGU">
-                                <rect key="frame" x="141" y="216" width="39" height="30"/>
+                                <rect key="frame" x="141" y="162" width="39" height="30"/>
                                 <state key="normal" title="50 mi"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNJ-3g-wfT">
-                                <rect key="frame" x="11" y="216" width="30" height="30"/>
+                                <rect key="frame" x="11" y="162" width="30" height="30"/>
                                 <state key="normal" title="0 mi"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKM-1E-8a1">
-                                <rect key="frame" x="245" y="79" width="56" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Xplore">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oug-RO-xU4">
+                                <rect key="frame" x="94" y="343" width="58" height="59"/>
+                                <connections>
+                                    <action selector="educationBtnPressed:" destination="qbA-N3-cYU" eventType="touchUpInside" id="s2c-ZC-EPb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Age:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p6U-IR-Azg">
+                                <rect key="frame" x="202" y="93" width="35" height="21"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oym-o2-Qhg">
+                                <rect key="frame" x="250" y="89" width="47" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKM-1E-8a1">
+                                <rect key="frame" x="120" y="413" width="81" height="39"/>
+                                <color key="backgroundColor" red="0.88767335197248309" green="0.87874844888440928" blue="0.90102163461538465" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="titleShadowOffset" width="4" height="4"/>
+                                <state key="normal" image="xlogo.png">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="explore:" destination="qbA-N3-cYU" eventType="touchUpInside" id="hAC-xh-hfU"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oug-RO-xU4">
-                                <rect key="frame" x="93" y="407" width="58" height="59"/>
-                                <connections>
-                                    <action selector="educationBtnPressed:" destination="qbA-N3-cYU" eventType="touchUpInside" id="s2c-ZC-EPb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -360,6 +359,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="xlogo.png" width="294" height="183"/>
         <image name="xplor_square_logo.png" width="321" height="398"/>
     </resources>
     <inferredMetricsTieBreakers>
