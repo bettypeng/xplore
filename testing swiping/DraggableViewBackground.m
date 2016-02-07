@@ -8,6 +8,7 @@
 
 #import "DraggableViewBackground.h"
 #import "ViewController.h"
+#import <EventKit/EventKit.h>
 
 @implementation DraggableViewBackground{
     NSInteger cardsLoadedIndex; //%%% the index of the card you have loaded into the loadedCards array last
@@ -42,7 +43,7 @@ static const float CARD_WIDTH = 290; //%%% width of the draggable card
     if (self) {
         [super layoutSubviews];
         [self setupView];
-        exampleCardLabels = [[NSArray alloc]initWithObjects:@"Robot Block Party volunteer", @"Save The Bay", @"Swell Superheroes Day", @"JA Day - Carl Lauro Elementary", @"Earth Day Cleanup", @"Play Partner Volunteer", @"Ice Watch USA Volunteer", @"Inspiring Minds Computer Mentor", nil]; //%%% placeholder for card-specific information
+        exampleCardLabels = [[NSArray alloc]initWithObjects:@"Robot Block Party Volunteer", @"Save The Bay", @"Swell Superheroes Day", @"JA Day - Carl Lauro Elementary", @"Earth Day Cleanup", @"Play Partner Volunteer", @"Ice Watch USA Volunteer", @"Inspiring Minds Computer Mentor", nil]; //%%% placeholder for card-specific information
         pics = [[NSArray alloc] initWithObjects:@"robot", @"savethebay", @"superheroes", @"jainaday", @"earthday", @"zoo", @"icewatch", @"computer", nil];
         dateArray = [[NSArray alloc] initWithObjects:@"2/28: 8-11 AM", @"3/1 - 5/1", @"4/5: 5-7PM", @"3/24: 12-2PM", @"4/16: 10-4PM", @"Times flexible", @"Winter 2016", @"11/30/15 03:30 PM - 4/29/16 05:45 PM", nil];
         desc = [[NSArray alloc] initWithObjects:@"The Robot Block Party features demonstrations and exhibits of robots used or created by universities, community organizations, industry and K-12 schools across Rhode Island. We need volunteers to help exhibitors load in and set up their booths, to help spectators find their way in the venue and answer general questions about the event.", @"Save The Bay is a non-profit organization whose mission is to provide education to the community about protecting and restoring the ecological health of the Narragansett Bay region. Volunteer restoration efforts including salt marsh digging and planting projects. Specific field activities include water table depth monitoring, vegetation monitoring, and fish monitoring.", @"Volunteers needed for Swell Superheroes visit to the Hasbro Children's Hospital. Enthusiasm, a superhero costume, and some experience working with kids is all that is needed!", @"Junior Achievement is the world’s largest organization dedicated to educating students about workforce readiness, entrepreneurship and financial literacy through experiential, hands-on programs. We are seeking volunteers to teach in all grades, Kindergarten through 5th. All five elementary sessions will be taught in one day on March 24, 2016.", @" All volunteers should dress for the weather and wear clothes they don't mind getting dirty. Closed-toed shoes are required. Volunteers must be able to do some light to moderate bending and lifting. All volunteers are encouraged to bring their own reusable water bottle and snacks to the cleanup event.", @"A Play Partner is a volunteer who is primarily responsible for observing and facilitating children’s play experiences as well as providing resources for zoo patrons in the activity play spaces located within the Our Big Backyard exhibit at Roger Williams Park Zoo.", @"IceWatch USA™, a program of Nature Abounds, brings you the opportunity to help scientists study how our climate is changing! All you need to do is to choose a location to observe over the winter, like a nearby lake, bay, or river, and record and report your observations about precipitation, ice and wildlife.", @"Inspiring Minds is looking for STEAM (science, technology, engineering, arts, mathematics) enthusiasts to teach suring our out-of-school time programming. Ideal volunteers will have a background a STEAM field, be a self-starter, motivated, organized, responsible, and enjoy working with youth. College experience and/or degree preferred.", nil];
@@ -58,12 +59,13 @@ static const float CARD_WIDTH = 290; //%%% width of the draggable card
 //%%% sets up the extra buttons on the screen
 -(void)setupView
 {
-#warning customize all of this.  These are just place holders to make it look pretty
+
     self.backgroundColor = [UIColor colorWithRed:.92 green:.93 blue:.95 alpha:1]; //the gray background colors
-    menuButton = [[UIButton alloc]initWithFrame:CGRectMake(17, 34, 22, 15)];
-    [menuButton setImage:[UIImage imageNamed:@"menuButton"] forState:UIControlStateNormal];
-    messageButton = [[UIButton alloc]initWithFrame:CGRectMake(284, 34, 18, 18)];
-    [messageButton setImage:[UIImage imageNamed:@"messageButton"] forState:UIControlStateNormal];
+    //menuButton = [[UIButton alloc]initWithFrame:CGRectMake(17, 34, 22, 15)];
+    //[menuButton setImage:[UIImage imageNamed:@"menuButton"] forState:UIControlStateNormal];
+    //messageButton = [[UIButton alloc]initWithFrame:CGRectMake(284, 34, 18, 18)];
+    //[messageButton setImage:[UIImage imageNamed:@"messageButton"] forState:UIControlStateNormal];
+
     xButton = [[UIButton alloc]initWithFrame:CGRectMake(60, 485, 59, 59)];
     [xButton setImage:[UIImage imageNamed:@"xButton"] forState:UIControlStateNormal];
     [xButton addTarget:self action:@selector(swipeLeft) forControlEvents:UIControlEventTouchUpInside];
@@ -76,7 +78,7 @@ static const float CARD_WIDTH = 290; //%%% width of the draggable card
     [self addSubview:checkButton];
 }
 
-#warning include own card customization here!
+
 //%%% creates a card and returns it.  This should be customized to fit your needs.
 // use "index" to indicate where the information should be pulled.  If this doesn't apply to you, feel free
 // to get rid of it (eg: if you are building cards from data from the internet)
@@ -154,7 +156,7 @@ static const float CARD_WIDTH = 290; //%%% width of the draggable card
     }
 }
 
-#warning include own action here!
+
 //%%% action called when the card goes to the left.
 // This should be customized with your own action
 -(void)cardSwipedLeft:(UIView *)card;
@@ -171,7 +173,7 @@ static const float CARD_WIDTH = 290; //%%% width of the draggable card
     }
 }
 
-#warning include own action here!
+
 //%%% action called when the card goes to the right.
 // This should be customized with your own action
 -(void)cardSwipedRight:(UIView *)card
@@ -186,6 +188,20 @@ static const float CARD_WIDTH = 290; //%%% width of the draggable card
         cardsLoadedIndex++;//%%% loaded a card, so have to increment count
         [self insertSubview:[loadedCards objectAtIndex:(MAX_BUFFER_SIZE-1)] belowSubview:[loadedCards objectAtIndex:(MAX_BUFFER_SIZE-2)]];
     }
+    EKEventStore *store = [EKEventStore new];
+    [store requestAccessToEntityType:EKEntityTypeEvent completion:^(BOOL granted, NSError *error) {
+        if (!granted) { return; }
+        EKEvent *event = [EKEvent eventWithEventStore:store];
+        event.title = @"Volunteer Events";
+        event.startDate = [NSDate date]; //today
+        event.endDate = [event.startDate dateByAddingTimeInterval:60*60];  //set 1 hour meeting
+        event.calendar = [store defaultCalendarForNewEvents];
+        NSError *err = nil;
+        [store saveEvent:event span:EKSpanThisEvent commit:YES error:&err];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Volunteer Event" message:@"Added to Calendar" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil];
+        [alert show];
+//        self.savedEventId = event.eventIdentifier;  //save the event id if you want to access this later
+    }];
 
 }
 
