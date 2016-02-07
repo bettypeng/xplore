@@ -219,7 +219,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKM-1E-8a1">
-                                <rect key="frame" x="117" y="422" width="86" height="44"/>
+                                <rect key="frame" x="120" y="416" width="81" height="39"/>
                                 <color key="backgroundColor" red="0.88767335197248309" green="0.87874844888440928" blue="0.90102163461538465" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="titleShadowOffset" width="4" height="4"/>
