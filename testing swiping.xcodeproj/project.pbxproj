@@ -38,6 +38,10 @@
 		AD400A791C66AE3300E5E642 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD400A781C66AE3300E5E642 /* Main.storyboard */; };
 		AD400A7F1C67014F00E5E642 /* xplor_square_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = AD400A7E1C67014F00E5E642 /* xplor_square_logo.png */; };
 		AD658D0D1C672DF100126497 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = AD658D0C1C672DF100126497 /* back.png */; };
+		AD997E4C1C67A7A900B2E145 /* xplormain.png in Resources */ = {isa = PBXBuildFile; fileRef = AD997E4B1C67A7A900B2E145 /* xplormain.png */; };
+		AD997E4E1C67A7AD00B2E145 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = AD997E4D1C67A7AD00B2E145 /* button.png */; };
+		AD997E501C67A7B000B2E145 /* xlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = AD997E4F1C67A7B000B2E145 /* xlogo.png */; };
+		AD997E521C67AB5600B2E145 /* computer.png in Resources */ = {isa = PBXBuildFile; fileRef = AD997E511C67AB5600B2E145 /* computer.png */; };
 		B4C426671C671DB5002459B3 /* robot.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C4265F1C671DB5002459B3 /* robot.png */; };
 		B4C4266B1C671DB5002459B3 /* jainaday.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C426631C671DB5002459B3 /* jainaday.png */; };
 /* End PBXBuildFile section */
@@ -93,6 +97,10 @@
 		AD400A781C66AE3300E5E642 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		AD400A7E1C67014F00E5E642 /* xplor_square_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xplor_square_logo.png; sourceTree = "<group>"; };
 		AD658D0C1C672DF100126497 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		AD997E4B1C67A7A900B2E145 /* xplormain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xplormain.png; sourceTree = "<group>"; };
+		AD997E4D1C67A7AD00B2E145 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		AD997E4F1C67A7B000B2E145 /* xlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xlogo.png; sourceTree = "<group>"; };
+		AD997E511C67AB5600B2E145 /* computer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = computer.png; sourceTree = "<group>"; };
 		B4C4265F1C671DB5002459B3 /* robot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = robot.png; path = ../../robot.png; sourceTree = "<group>"; };
 		B4C426631C671DB5002459B3 /* jainaday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = jainaday.png; path = ../../jainaday.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,10 +164,14 @@
 		99B7AE9E192D50D500C1B49C /* testing swiping */ = {
 			isa = PBXGroup;
 			children = (
+				AD997E511C67AB5600B2E145 /* computer.png */,
 				B4C4265F1C671DB5002459B3 /* robot.png */,
 				B4C426631C671DB5002459B3 /* jainaday.png */,
+				AD997E4B1C67A7A900B2E145 /* xplormain.png */,
 				A0E6742E1C67A18B00F24F24 /* robot.png */,
+				AD997E4F1C67A7B000B2E145 /* xlogo.png */,
 				A0E674301C67A19D00F24F24 /* jainaday.png */,
+				AD997E4D1C67A7AD00B2E145 /* button.png */,
 				AD400A781C66AE3300E5E642 /* Main.storyboard */,
 				99B7AEA7192D50D500C1B49C /* AppDelegate.h */,
 				99B7AEA8192D50D500C1B49C /* AppDelegate.m */,
@@ -298,7 +310,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A04865CA1C67321800512259 /* superheroes.png in Resources */,
+				AD997E501C67A7B000B2E145 /* xlogo.png in Resources */,
 				A04865C41C67320C00512259 /* jainaday.png in Resources */,
+				AD997E4E1C67A7AD00B2E145 /* button.png in Resources */,
 				B4C426671C671DB5002459B3 /* robot.png in Resources */,
 				AD658D0D1C672DF100126497 /* back.png in Resources */,
 				B4C4266B1C671DB5002459B3 /* jainaday.png in Resources */,
@@ -307,7 +321,9 @@
 				AD400A7F1C67014F00E5E642 /* xplor_square_logo.png in Resources */,
 				A04865C81C67321800512259 /* robot.png in Resources */,
 				99B7AEB1192D50D500C1B49C /* Images.xcassets in Resources */,
+				AD997E4C1C67A7A900B2E145 /* xplormain.png in Resources */,
 				A0E674311C67A19D00F24F24 /* jainaday.png in Resources */,
+				AD997E521C67AB5600B2E145 /* computer.png in Resources */,
 				A04865CC1C67322C00512259 /* zoo.png in Resources */,
 				A04865C21C67320300512259 /* icewatch.png in Resources */,
 				99B7AEA3192D50D500C1B49C /* InfoPlist.strings in Resources */,

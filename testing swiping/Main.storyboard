@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -64,7 +64,7 @@
                                     <action selector="login:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Qvu-B7-wtr"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="xplor_square_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="qOJ-L3-89I">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="xplormain.png" translatesAutoresizingMaskIntoConstraints="NO" id="qOJ-L3-89I">
                                 <rect key="frame" x="40" y="20" width="240" height="273"/>
                             </imageView>
                         </subviews>
@@ -90,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="431" y="165"/>
+            <point key="canvasLocation" x="427" y="-477"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="jaU-3g-fdT">
@@ -166,7 +166,7 @@
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="idv-4X-MNa">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <items>
-                                    <navigationItem title="Filters" id="0m4-Tl-dY5">
+                                    <navigationItem id="0m4-Tl-dY5">
                                         <barButtonItem key="rightBarButtonItem" title="Events" id="Z8Y-79-8YG">
                                             <connections>
                                                 <segue destination="LvU-YR-F4s" kind="modal" id="GER-RB-AfK"/>
@@ -214,17 +214,20 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKM-1E-8a1">
-                                <rect key="frame" x="120" y="413" width="81" height="39"/>
-                                <color key="backgroundColor" red="0.88767335197248309" green="0.87874844888440928" blue="0.90102163461538465" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="129" y="410" width="62" height="62"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="titleShadowOffset" width="4" height="4"/>
-                                <state key="normal" image="xlogo.png">
+                                <state key="normal" image="button.png">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="explore:" destination="qbA-N3-cYU" eventType="touchUpInside" id="hAC-xh-hfU"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="xlogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="gI5-DR-fyk">
+                                <rect key="frame" x="117" y="20" width="86" height="44"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -246,9 +249,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eJa-9V-P3A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="853" y="178"/>
+            <point key="canvasLocation" x="908" y="204"/>
         </scene>
-        <!--View Controller-->
+        <!--Swipe-->
         <scene sceneID="pPT-T8-xWT">
             <objects>
                 <viewController id="LvU-YR-F4s" customClass="Swipe" sceneMemberID="viewController">
@@ -268,10 +271,9 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <items>
                                         <navigationItem title="My Events" id="a4q-Kk-VOS">
-                                            <barButtonItem key="leftBarButtonItem" title="Back" id="h1J-fc-B8T">
-                                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <barButtonItem key="leftBarButtonItem" title="Back" id="rBm-ps-JDb">
                                                 <connections>
-                                                    <segue destination="qbA-N3-cYU" kind="modal" id="yO1-i3-zGf"/>
+                                                    <segue destination="qbA-N3-cYU" kind="modal" id="tjl-Xs-Ont"/>
                                                 </connections>
                                             </barButtonItem>
                                         </navigationItem>
@@ -285,7 +287,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZcX-dH-HPN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1114" y="-396"/>
+            <point key="canvasLocation" x="434" y="542"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="VoO-IT-PUJ">
@@ -300,9 +302,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="usT-P7-fGc">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <items>
-                                    <navigationItem title="XPLOR" id="3Wu-8J-kwr">
+                                    <navigationItem id="3Wu-8J-kwr">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="RGA-5r-etN">
                                             <connections>
                                                 <segue destination="qbA-N3-cYU" kind="modal" id="wvg-0O-W3k"/>
@@ -311,6 +313,9 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="xlogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZfU-gk-AnC">
+                                <rect key="frame" x="117" y="20" width="86" height="44"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -319,15 +324,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Opx-t1-APf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1242" y="178"/>
+            <point key="canvasLocation" x="1264" y="204"/>
         </scene>
     </scenes>
     <resources>
+        <image name="button.png" width="374" height="374"/>
         <image name="xlogo.png" width="294" height="183"/>
-        <image name="xplor_square_logo.png" width="321" height="398"/>
+        <image name="xplormain.png" width="321" height="398"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yO1-i3-zGf"/>
+        <segue reference="tjl-Xs-Ont"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
 </document>

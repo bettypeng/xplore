@@ -189,6 +189,8 @@ int numSwipes = 0;
             [defaults setObject:orgName forKey:@"orgName6"];
         case 7:
             [defaults setObject:orgName forKey:@"orgName7"];
+        case 8:
+            [defaults setObject:orgName forKey:@"orgName8"];
     }
     [defaults synchronize];
     
