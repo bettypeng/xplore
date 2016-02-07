@@ -27,6 +27,7 @@
 		AD400A771C66AC7A00E5E642 /* Swipe.m in Sources */ = {isa = PBXBuildFile; fileRef = AD400A761C66AC7A00E5E642 /* Swipe.m */; };
 		AD400A791C66AE3300E5E642 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD400A781C66AE3300E5E642 /* Main.storyboard */; };
 		AD400A7F1C67014F00E5E642 /* xplor_square_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = AD400A7E1C67014F00E5E642 /* xplor_square_logo.png */; };
+		AD658D0D1C672DF100126497 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = AD658D0C1C672DF100126497 /* back.png */; };
 		B4C426661C671DB5002459B3 /* earthday.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C4265E1C671DB5002459B3 /* earthday.png */; };
 		B4C426671C671DB5002459B3 /* robot.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C4265F1C671DB5002459B3 /* robot.png */; };
 		B4C426681C671DB5002459B3 /* savethebay.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C426601C671DB5002459B3 /* savethebay.png */; };
@@ -78,6 +79,7 @@
 		AD400A761C66AC7A00E5E642 /* Swipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Swipe.m; sourceTree = "<group>"; };
 		AD400A781C66AE3300E5E642 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		AD400A7E1C67014F00E5E642 /* xplor_square_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xplor_square_logo.png; sourceTree = "<group>"; };
+		AD658D0C1C672DF100126497 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		B4C4265E1C671DB5002459B3 /* earthday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = earthday.png; path = ../../earthday.png; sourceTree = "<group>"; };
 		B4C4265F1C671DB5002459B3 /* robot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = robot.png; path = ../../robot.png; sourceTree = "<group>"; };
 		B4C426601C671DB5002459B3 /* savethebay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = savethebay.png; path = ../../savethebay.png; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				99B7AED1192E914500C1B49C /* OverlayView.m */,
 				AD400A7E1C67014F00E5E642 /* xplor_square_logo.png */,
 				99B7AEB0192D50D500C1B49C /* Images.xcassets */,
+				AD658D0C1C672DF100126497 /* back.png */,
 				99B7AE9F192D50D500C1B49C /* Supporting Files */,
 			);
 			path = "testing swiping";
@@ -289,6 +292,7 @@
 				B4C426661C671DB5002459B3 /* earthday.png in Resources */,
 				B4C4266C1C671DB5002459B3 /* icewatch.png in Resources */,
 				B4C426741C6727B7002459B3 /* xplorgray.png in Resources */,
+				AD658D0D1C672DF100126497 /* back.png in Resources */,
 				B4C4266B1C671DB5002459B3 /* jainaday.png in Resources */,
 				B4C426691C671DB5002459B3 /* zoo.png in Resources */,
 				B4C426681C671DB5002459B3 /* savethebay.png in Resources */,
