@@ -26,6 +26,7 @@
 		AD400A741C66919500E5E642 /* linkedin-sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD400A731C66919500E5E642 /* linkedin-sdk.framework */; };
 		AD400A771C66AC7A00E5E642 /* Swipe.m in Sources */ = {isa = PBXBuildFile; fileRef = AD400A761C66AC7A00E5E642 /* Swipe.m */; };
 		AD400A791C66AE3300E5E642 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD400A781C66AE3300E5E642 /* Main.storyboard */; };
+		AD400A7F1C67014F00E5E642 /* xplor_square_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = AD400A7E1C67014F00E5E642 /* xplor_square_logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		AD400A751C66AC6600E5E642 /* Swipe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Swipe.h; sourceTree = "<group>"; };
 		AD400A761C66AC7A00E5E642 /* Swipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Swipe.m; sourceTree = "<group>"; };
 		AD400A781C66AE3300E5E642 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		AD400A7E1C67014F00E5E642 /* xplor_square_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xplor_square_logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				99B7AECE192D513800C1B49C /* DraggableView.m */,
 				99B7AED0192E914500C1B49C /* OverlayView.h */,
 				99B7AED1192E914500C1B49C /* OverlayView.m */,
+				AD400A7E1C67014F00E5E642 /* xplor_square_logo.png */,
 				99B7AEB0192D50D500C1B49C /* Images.xcassets */,
 				99B7AE9F192D50D500C1B49C /* Supporting Files */,
 			);
@@ -256,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD400A791C66AE3300E5E642 /* Main.storyboard in Resources */,
+				AD400A7F1C67014F00E5E642 /* xplor_square_logo.png in Resources */,
 				99B7AEB1192D50D500C1B49C /* Images.xcassets in Resources */,
 				99B7AEA3192D50D500C1B49C /* InfoPlist.strings in Resources */,
 			);
